@@ -1,0 +1,51 @@
+{
+  "name": "k-closest",
+  "version": "1.3.0",
+  "description": "Robust k closest element search based on Heap",
+  "main": "lib/index.umd.js",
+  "es2015": "lib/index.js",
+  "scripts": {
+    "test": "mocha ./scripts/test*.js",
+    "bench": "node ./scripts/benchmark.js",
+    "chart": "node ./scripts/chart.js",
+    "build": "rollup --config && mocha ./scripts/test*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/georgegach/k-closest.git"
+  },
+  "keywords": [
+    "closest"
+  ],
+  "author": "George Gach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/georgegach/k-closest/issues"
+  },
+  "homepage": "https://github.com/georgegach/k-closest#readme",
+  "devDependencies": {
+    "@cus/chartjs-node": "^1.6.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "benchmark": "^2.1.4",
+    "chai": "^4.1.2",
+    "chart.js": "^2.7.3",
+    "chartjs-node": "^1.7.1",
+    "chartjs-node-canvas": "^1.1.6",
+    "cli-table": "^0.3.1",
+    "eslint": "^4.8.0",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^4.0.1",
+    "rollup": "^0.50.1",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-license": "^0.7.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "rollup-plugin-uglify-es": "0.0.1",
+    "systeminformation": "^3.45.9"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  }
+}
