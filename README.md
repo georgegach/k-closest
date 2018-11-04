@@ -110,3 +110,8 @@ Next natural approach is to just find minDistances K times while extracting each
 The most robust approach in the package is `Seeker.wHeap(item, k)`. Essentially in this approach the MaxHeap acts as a temp array that is gathering candidates. Each item is compared to the root of MaxHeap that is the current farthest candidate from the target and will be replaced if coming element's distance is less. Finally, when done, extract elements and reverse the array. This guarantees to always have K elements in the Heap giving drastic advantage not only in speed but space as well. Running time performance is `O(K + (N-K)LogK)` and according to our benchmarks usually performs best.
 
 The only rival to previous approach is again Heap itself. `Seeker.wHeapSort(item, k)` builds the heap in `O(N)` and just extracts the elements in `O(KLogN)` time. Although this method requires much more space, according to benchmarks, HeapSort-based method is superior when `K` is substantially large with respect to `N`. Total running time `O(N + KLogN)`.  
+
+
+## Performance benchmarks
+See in detail at [benchmarks.md](https://github.com/georgegach/k-closest/blob/master/scripts/logs/benchmark.md)
+![Chart](scripts/logs/chart.png)
